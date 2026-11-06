@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>浮岛建造师 · Floating Isles</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div id="app"></div>
+  <div id="vignette"></div>
+  <div id="stormfx"></div>
+
+  <div id="hud">
+    <div id="res">
+      <span class="chip">☁️ 云晶 <b id="r-crystal">0</b></span>
+      <span class="chip">🪵 风木 <b id="r-wood">0</b></span>
+      <span class="chip">⚓ 锚石 <b id="r-anchor">0</b></span>
+      <span class="chip">🏝️ 岛屿 <b id="r-isles">1</b></span>
+      <span class="chip">👥 单位 <b id="r-units">0</b></span>
+      <span class="chip">🐦 神鸟 <b id="r-birds">0/8</b></span>
+      <span class="chip danger">💔 已失去 <b id="r-lost">0</b></span>
+    </div>
+
+    <div id="stormwrap">
+      <div id="storm-label">☀️ 平静</div>
+      <div id="storm-bar"><div id="storm-fill"></div></div>
+    </div>
+
+    <div id="alerts"></div>
+    <div id="toasts"></div>
+  </div>
+
+  <div id="tut" class="hidden">
+    <div id="tut-text"></div>
+    <a id="tut-skip" href="javascript:void 0">跳过引导 »</a>
+  </div>
+
+  <div id="panel" class="hidden">
+    <div id="panel-title"></div>
+    <div id="panel-sub"></div>
+    <div id="panel-btns"></div>
+  </div>
+
+  <div id="settle" class="hidden">
+    <div id="settle-card">
+      <h2 id="settle-title">风暴过去了</h2>
+      <div id="settle-body"></div>
+      <button id="settle-ok">继续建造</button>
+    </div>
+  </div>
+
+  <div id="intro">
+    <div id="intro-card">
+      <h1>浮岛建造师</h1>
+      <div id="slides">
+        <p id="slide-text">云海之上，曾有一座天空之城。</p>
+        <div id="slide-dots"></div>
+      </div>
+      <button id="intro-start">启程 ›</button>
+      <div id="best"></div>
+    </div>
+  </div>
+
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
